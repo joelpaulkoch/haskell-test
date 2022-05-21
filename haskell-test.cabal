@@ -32,6 +32,8 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , hlint
+    , hspec
   default-language: Haskell2010
 
 executable haskell-test-exe
@@ -44,6 +46,8 @@ executable haskell-test-exe
   build-depends:
       base >=4.7 && <5
     , haskell-test
+    , hlint
+    , hspec
   default-language: Haskell2010
 
 test-suite haskell-test-test
@@ -57,4 +61,6 @@ test-suite haskell-test-test
   build-depends:
       base >=4.7 && <5
     , haskell-test
+    , hlint
+    , hspec
   default-language: Haskell2010
