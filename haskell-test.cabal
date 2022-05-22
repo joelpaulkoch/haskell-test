@@ -37,6 +37,7 @@ library
     , doctest
     , hlint
     , hspec
+    , scotty
   default-language: Haskell2010
 
 executable haskell-test-exe
@@ -53,6 +54,7 @@ executable haskell-test-exe
     , haskell-test
     , hlint
     , hspec
+    , scotty
   default-language: Haskell2010
 
 test-suite haskell-test-test
@@ -71,4 +73,5 @@ test-suite haskell-test-test
     , haskell-test
     , hlint
     , hspec
+    , scotty
   default-language: Haskell2010

@@ -25,6 +25,7 @@ dependencies:
 - hspec
 - QuickCheck
 - doctest
+- scotty
 
 library:
   source-dirs: src

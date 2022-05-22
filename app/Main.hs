@@ -1,6 +1,15 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Main where
 
-import Lib
+import Apple
+import Web.Scotty
+
+import Data.Monoid (mconcat)
+import Data.String
+
 
 main :: IO ()
-main = someFunc
+main = scotty 3000 $
+    get "/" $ do
+        html $ fromString getApple
