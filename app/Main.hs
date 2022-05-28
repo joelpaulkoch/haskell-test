@@ -12,4 +12,4 @@ import Data.String
 main :: IO ()
 main = scotty 3000 $
     get "/" $ do
-        html $ fromString getApple
+        html $ fromString $ show getApple

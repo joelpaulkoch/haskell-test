@@ -1,9 +1,12 @@
-module Apple (getApple) where
+module Apple (Apple(Apple), getApple) where
 
--- | get a string "apple"
+data Apple = Apple
+ deriving (Show, Eq)
+
+-- | get an Apple
 -- 
 -- >>> getApple
--- "apple"
+-- Apple
 --
-getApple :: String
-getApple = "apple"
+getApple :: Apple
+getApple = Apple

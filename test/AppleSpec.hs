@@ -10,6 +10,6 @@ main = hspec spec
 
 spec = 
   describe "Apple.getApple" $ do
-    it "returns a string 'apple'" $ do
-      getApple `shouldBe` "apple"
+    it "returns an apple" $ do
+      getApple `shouldBe` Apple
       
