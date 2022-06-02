@@ -1,6 +1,10 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
+  - before: |
+      stack config set install-ghc false --global
+      stack config set system-ghc true --global
+
   - init: |
       cabal update
       stack build
