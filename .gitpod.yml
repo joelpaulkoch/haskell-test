@@ -4,12 +4,10 @@ tasks:
   - before: |
       stack config set install-ghc false --global
       stack config set system-ghc true --global
-
-  - init: |
       ghcup install ghc 9.0.2
+    init: |
       cabal update
       stack build
-
     command: |
       stack test
 
