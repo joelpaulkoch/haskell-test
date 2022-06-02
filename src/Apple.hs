@@ -1,12 +1,18 @@
-module Apple (Apple(Apple), getApple) where
+module Apple
+  ( Apple
+      ( BadApple,
+        HealthyApple
+      ),
+    getApple,
+  )
+where
 
-data Apple = Apple
- deriving (Show, Eq)
+data Apple = HealthyApple | BadApple {fault :: String}
+  deriving (Show, Eq)
 
 -- | get an Apple
--- 
--- >>> getApple
--- Apple
 --
+-- >>> getApple
+-- HealthyApple
 getApple :: Apple
-getApple = Apple
+getApple = HealthyApple
