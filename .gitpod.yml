@@ -15,3 +15,4 @@ tasks:
 vscode:
   extensions:
     - haskell.haskell
+    - justusadam.language-haskell
